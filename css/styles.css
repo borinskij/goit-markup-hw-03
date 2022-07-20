@@ -1,29 +1,12 @@
-/* nav 
-color: #2196F3; синий ховер
-color: #212121; черный*/
-
-/*logo 
-color: #2196F3;  синий
-color: #000000;  черный*/
-
-/*contakt
-color: #757575 
-color: #2196F3; при наведении ховер */
-
-/*слоган
- color: #FFFFFF;*/
-
-/*секции
-заглавие color: #212121;
-текст color: #757575;*/
-
-/*основной
-color: #212121;
-вторичный color: #757575;  */
-
-/*footer 
-contacts
-color: rgba(255, 255, 255, 0.6)*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* margin: 0; */
+}
 
 :root {
   --primary-text-color: #757575;
@@ -41,6 +24,18 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  box-sizing: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,6 +50,15 @@ ul {
   overflow: hidden;
 }
 
+* * {
+  outline: 2px solid red;
+}
+/* -----Body----- */
+.container {
+  width: 1200px;
+  padding: 15px;
+}
+
 /* хедер */
 .page-header {
   background: #ffffff;
@@ -67,6 +71,7 @@ ul {
   line-height: 1.2;
   font-weight: 700;
   text-decoration: none;
+  margin-top: 24px;
 }
 .logo-blu {
   color: var(--accent-text-color);
@@ -93,15 +98,14 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin: 0;
 }
+
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-text-color);
 }
 
-.hidden {
-  display: none;
-}
 /* hero */
 .hero-title,
 .hero-button {
@@ -113,6 +117,7 @@ ul {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 
 /* button */
