@@ -1,11 +1,18 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  /* margin: 0; */
+  margin: 0;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
 }
 
 :root {
@@ -50,9 +57,9 @@ ol {
   overflow: hidden;
 }
 
-* * {
+/* * * {
   outline: 2px solid red;
-}
+} */
 /* -----Body----- */
 .container {
   width: 1200px;
@@ -118,6 +125,13 @@ ol {
   text-align: center;
   letter-spacing: 0.06em;
   margin: 0;
+  margin-bottom: 30px;
+}
+.container-hero {
+  width: 696px;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* button */
@@ -134,8 +148,23 @@ ol {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin: auto;
 }
 /* section */
+.accent-list {
+  padding: 0px;
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+}
+.accent {
+  padding-top: 94px;
+  justify-content: center;
+}
+
+.accent-text {
+  width: 270px;
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -144,13 +173,18 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .section-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  box-sizing: border-box;
 }
+
+/* About */
+
 .section-about {
   color: var(--title-text-color);
   font-weight: 700;
@@ -158,7 +192,15 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  justify-content: center;
 }
+.about-list {
+  padding: 0px;
+  padding-bottom: 94px;
+}
+
+/* -------Team------- */
 
 .section-team {
   color: var(--title-text-color);
@@ -167,6 +209,7 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  box-sizing: border-box;
 }
 
 .team-title {
@@ -174,18 +217,37 @@ ol {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 
-/* footer */
+.team-list {
+  padding: 0px;
+}
+
+.team {
+  margin-bottom: 94px;
+}
+
+/*------ footer ------ */
+
+.logo-footer {
+  box-sizing: border-box;
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+
+.adress-list {
+  padding: 0px;
+}
 .logo-adress a {
   color: #ffffff;
   font-size: 14px;
@@ -202,9 +264,20 @@ ol {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+  margin-bottom: 10px;
 }
 
-/* Portfolio */
+.logo-tel {
+  padding-bottom: 60px;
+}
+/* -----Portfolio------- */
+
+.header-portfolio {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  /* border-bottom-color: #ececec; */
+  margin-bottom: 94px;
+}
 
 .filter-button {
   background: #f5f4fa;
