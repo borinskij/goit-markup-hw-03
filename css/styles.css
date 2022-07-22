@@ -56,7 +56,6 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -67,28 +66,36 @@ a {
   outline: 2px solid red;
 } */
 
+.container {
+  width: var(--box-sizing);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* =====хедер======= */
 
-.container-heder {
+.page-header .container {
   box-sizing: border-box;
-  width: var(--box-sizing);
   display: flex;
   height: 80px;
-  padding-top: auto;
-  padding-bottom: auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
   align-items: center;
   margin: auto;
+  outline: 2px solid red;
+  background: #ffffff;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
+  margin-left: 0px;
 }
-.page-header {
-  background: #ffffff;
+/* .page-header {
   display: flex;
   align-items: center;
-}
+} */
+
 /* логотип */
 .logo {
   color: #000000;
@@ -143,13 +150,27 @@ a {
 }
 
 /*========= hero ===========*/
-.hero {
-  background-color: #000000;
+
+.hero .container {
   width: 1200px;
   margin: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+.hero {
+  /* display: block; */
+  background: rgba(47, 48, 58, 0.4);
+}
+
+.hero::before {
+  display: block;
+  background-image: url(../image/hero.jpeg);
+  /* background: rgba(47, 48, 58, 0.4); */
+  background-size: contain;
+  background-position: center;
+}
+
 .hero-title,
 .hero-button {
   color: #ffffff;
@@ -163,10 +184,6 @@ a {
   letter-spacing: 0.06em;
   margin: 0;
   margin-bottom: 30px;
-}
-.container-hero {
-  width: 696px;
-  margin: auto;
 }
 
 /* button */
@@ -190,20 +207,20 @@ a {
 }
 /* ===== Accent section =======*/
 
-.section-accent {
+.section-accent .container {
   width: var(--box-sizing);
   margin: auto;
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
-.accent {
-  /* padding-top: 94px; */
+/* .accent {
+  padding-top: 94px;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
-}
+  margin: auto; 
+}*/
 
 .accent-list {
   padding: 0px;
@@ -242,10 +259,10 @@ a {
 
 /* ========About================= */
 
-.secction-about {
+.secction-about .container {
   width: var(--box-sizing);
   margin: auto;
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 .section-about-title {
   color: var(--title-text-color);
@@ -275,21 +292,22 @@ a {
 
 /* ================Team============== */
 
-.section-title-team {
+/* .section-title-team {
   width: var(--box-sizing);
   margin: auto;
-  /* margin-bottom: 94px; */
+  margin-bottom: 94px;
   background: #f5f4fa;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px; 
 }
+*/
 
 /* .team {
   margin-bottom: 94px;
   width: var(--box-sizing);
 } */
 
-.section-team-title {
+/* .section-team-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -298,7 +316,7 @@ a {
   letter-spacing: 0.03em;
   box-sizing: border-box;
   margin-bottom: 50px;
-}
+} */
 
 .card-team {
   width: 270px;
@@ -337,11 +355,11 @@ a {
 }
 
 /*------ footer ------ */
-
+/* 
 .section-footer {
   width: var(--box-sizing);
   margin: auto;
-}
+} */
 
 .logo-white {
   color: #ffffff;
