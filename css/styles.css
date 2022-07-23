@@ -74,17 +74,24 @@ a {
 
 /* =====хедер======= */
 
+.page-header {
+padding-top: 24px;
+  padding-bottom: 25px;
+  background: #ffffff;
+}
+
 .page-header .container {
+
   box-sizing: border-box;
   width: var(--box-sizing);
   display: flex;
   height: 80px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   align-items: center;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   /* outline: 2px solid red; */
-  background: #ffffff;
+  
 }
 
 .nav-logo {
@@ -152,19 +159,20 @@ a {
 
 /*========= hero ===========*/
 
+.hero{
+ padding-top: 200px;
+  padding-bottom: 200px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url(../image/hero.jpeg);
+}
+
 .hero .container {
   width: 1200px;
   margin: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
+ 
 }
 
-/* .hero {
-   background: rgba(47, 48, 58, 0.4);
-} */
-
-/* .hero::before {
+/* .hero ::before {
   display: block;
   background-image: url(../image/hero.jpeg);
   background: rgba(47, 48, 58, 0.4);
@@ -178,17 +186,20 @@ a {
   /* color: #1fda9b; */
 }
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: 0;
+  margin: auto;
   padding-bottom: 30px;
 }
 
 /* button */
 .hero-button {
+  /* width: 200px;
+  height: 50px; */
   background-color: #2196f3;
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -202,19 +213,24 @@ a {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin: auto;
+  padding:  0px 32px;
   /* box-sizing: border-box;
   width: 200px;
   height: 50px; */
 }
 /* ===== Accent section =======*/
 
+
+.section-accent {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-accent .container {
   width: var(--box-sizing);
   margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* display: flex;
-  justify-content: flex-start; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* .accent {
@@ -261,12 +277,17 @@ a {
 }
 
 /* ========About================= */
+.secction-about{
+  padding-bottom: 94px;
+}
+
 
 .secction-about .container {
   width: var(--box-sizing);
   margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 .section-about-title {
   color: var(--title-text-color);
@@ -277,7 +298,7 @@ a {
   letter-spacing: 0.03em;
   /* padding-top: 94px; */
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .about-list {
   padding: 0px;
@@ -296,24 +317,29 @@ a {
 
 /* ================Team============== */
 
+.section-title-team{
+padding-top: 94px;
+background: #ececec;
+padding-bottom: 94px;
+}
 
 .section-title-team .container {
   width: var(--box-sizing);
   margin: auto;
-  padding-top: 94px;
-  background: #ececec;
-  /* color: var(--title-text-color);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+ 
+  /* {color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     box-sizing: border-box;
-    outline: 2px solid red;  */
-   padding-bottom: 94px;
-}
-
-
+    outline: 2px solid red;}  */
+   
 
   /* padding-top: 94px;
   padding-bottom: 94px;  */
@@ -330,26 +356,28 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   box-sizing: border-box;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   /* outline: 2px solid red; */
   /* margin-bottom: 50px; */
 } 
 
 .card-team {
   width: 270px;
-  height: 368px;
-  /* margin-bottom: 94px; */
-  /* border: 1px solid #bd1515; */
+  height: auto;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2) ;
-  /* border-bottom-width: 10px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec; */
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
+.blok-name {
+padding-top: 30px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -357,8 +385,7 @@ a {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  /* padding-bottom: 10px; */
 }
 
 .team-text {
@@ -379,15 +406,20 @@ a {
 
 /*----------------------- footer ----------------------- */
 
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .section-footer .container {
   width: var(--box-sizing);
   margin: auto;
-    
-      width: var(--box-sizing);
-      margin: auto;
-      padding-top: 60px;
-      padding-bottom: 60px;
+  width: var(--box-sizing);
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 .section-footer {
 background-color: #2f303a;
 }
@@ -444,9 +476,9 @@ display: inline-block;
 .logo-tel {
   padding-bottom: 60px;
 } */
-/* ------------Portfolio------------------ */
+/* =======================================Portfolio========================================= */
 
-.header-portfolio .container {
+.header-portfolio {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -454,21 +486,25 @@ display: inline-block;
 
 /* ----Portfolio button----- */
 
+
+.portfolio {
+  padding: 94px  0px;
+}
 .portfolio .container {
   max-width: 1200px;
   margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 0px 15px;
+  
 }
 
-.portfolio-button {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  max-width: 1200px;
-}
+  /* .portfolio-button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 1200px;
+  } */
 
 .filter-button {
   background: #f5f4fa;
@@ -498,7 +534,7 @@ display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* Portfolio work */
@@ -525,23 +561,29 @@ display: inline-block;
 
 .card-work {
   width: 370px;
-  height: 404px;
+  /* height: 404px; */
   /* margin-bottom: 30px; */
   border: 1px solid #ececec;
-  
-}
-
-.img-work {
   padding-bottom: 20px;
 }
 
+/* .img-work {
+  padding-bottom: 20px;
+} */
+
+.card-work-name {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: px;
+}
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
   padding-left: 24px;
 }
 .work-text {
