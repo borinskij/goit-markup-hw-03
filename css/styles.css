@@ -156,6 +156,15 @@ padding-top: 24px;
 .contacts a:focus {
   color: var(--accent-text-color);
 }
+/* .mail {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background-image: url(../image/symbol-defs.svg#icon-instagram);
+} */
+
 
 /*========= hero ===========*/
 
