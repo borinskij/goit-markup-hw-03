@@ -75,23 +75,21 @@ a {
 /* =====хедер======= */
 
 .page-header {
-padding-top: 24px;
+  padding-top: 24px;
   padding-bottom: 25px;
   background: #ffffff;
 }
 
 .page-header .container {
-
   box-sizing: border-box;
   width: var(--box-sizing);
   display: flex;
-  height: 80px;
+  /* height: 80px; */
   align-items: center;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid red; */
-  
 }
 
 .nav-logo {
@@ -112,7 +110,7 @@ padding-top: 24px;
   line-height: 1.2;
   font-weight: 700;
   text-decoration: none;
-  padding-right: 93px;
+  margin-right: 93px;
 }
 .logo-blu {
   color: var(--accent-text-color);
@@ -165,11 +163,10 @@ padding-top: 24px;
   background-image: url(../image/symbol-defs.svg#icon-instagram);
 } */
 
-
 /*========= hero ===========*/
 
-.hero{
- padding-top: 200px;
+.hero {
+  padding-top: 200px;
   padding-bottom: 200px;
   background: rgba(47, 48, 58, 0.4);
   background-image: url(../image/hero.jpeg);
@@ -178,7 +175,6 @@ padding-top: 24px;
 .hero .container {
   width: 1200px;
   margin: auto;
- 
 }
 
 /* .hero ::before {
@@ -222,13 +218,12 @@ padding-top: 24px;
   letter-spacing: 0.06em;
   cursor: pointer;
   margin: auto;
-  padding:  0px 32px;
+  padding: 0px 32px;
   /* box-sizing: border-box;
   width: 200px;
   height: 50px; */
 }
 /* ===== Accent section =======*/
-
 
 .section-accent {
   padding-top: 94px;
@@ -255,7 +250,7 @@ padding-top: 24px;
   box-sizing: border-box;
   /* width: 270px; */
   display: flex;
- 
+
   justify-content: space-between;
   margin: auto;
 }
@@ -286,17 +281,15 @@ padding-top: 24px;
 }
 
 /* ========About================= */
-.secction-about{
+.secction-about {
   padding-bottom: 94px;
 }
-
 
 .secction-about .container {
   width: var(--box-sizing);
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 .section-about-title {
   color: var(--title-text-color);
@@ -326,10 +319,10 @@ padding-top: 24px;
 
 /* ================Team============== */
 
-.section-title-team{
-padding-top: 94px;
-background: #ececec;
-padding-bottom: 94px;
+.section-title-team {
+  padding-top: 94px;
+  background: #ececec;
+  padding-bottom: 94px;
 }
 
 .section-title-team .container {
@@ -338,9 +331,8 @@ padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
- 
- 
-  /* {color: var(--title-text-color);
+
+/* {color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -348,16 +340,15 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
     box-sizing: border-box;
     outline: 2px solid red;}  */
-   
 
-  /* padding-top: 94px;
+/* padding-top: 94px;
   padding-bottom: 94px;  */
 /* .team {
   margin-bottom: 94px;
   width: var(--box-sizing);
 } */
 
- .section-team-title {
+.section-team-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -368,24 +359,23 @@ padding-bottom: 94px;
   margin-bottom: 50px;
   /* outline: 2px solid red; */
   /* margin-bottom: 50px; */
-} 
+}
 
 .card-team {
   width: 270px;
   height: auto;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2) ;
-    background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .blok-name {
-padding-top: 30px;
-display: flex;
-flex-direction: column;
-gap: 10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .team-title {
   color: var(--title-text-color);
@@ -430,25 +420,27 @@ gap: 10px;
 }
 
 .section-footer {
-background-color: #2f303a;
+  background-color: #2f303a;
 }
 
 .logo-white {
   color: #ffffff;
 }
 
+.adress {
+  margin-top: 20px;
+}
+.adress ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
 .logo-footer {
   display: inline-block;
   padding-left: 0px;
-  padding-bottom: 20px;
   margin: 0px;
 }
-/* .adress {
-  padding: 0px;
-}
-.adress-list {
-  padding: 0px;
-} */
 .logo-adress a {
   color: #ffffff;
   font-size: 14px;
@@ -456,8 +448,8 @@ background-color: #2f303a;
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
-display: inline-block;
-  padding-top: 10px;
+  display: inline-block;
+  /* padding-top: 10px; */
 }
 .logo-mail a,
 .logo-tel a {
@@ -468,7 +460,7 @@ display: inline-block;
   text-decoration: none;
   font-style: normal;
   display: inline-block;
-  padding-top: 9px;
+  /* padding-top: 9px; */
 }
 
 /* .container-footer {
@@ -477,14 +469,10 @@ display: inline-block;
   margin: auto;
   padding-top: 60px;} */
 
-
 .adres-list {
   padding: 0px;
 }
-/* 
-.logo-tel {
-  padding-bottom: 60px;
-} */
+
 /* =======================================Portfolio========================================= */
 
 .header-portfolio {
@@ -495,31 +483,20 @@ display: inline-block;
 
 /* ----Portfolio button----- */
 
-
 .portfolio {
-  padding: 94px  0px;
+  padding: 94px 0px;
 }
 .portfolio .container {
   max-width: 1200px;
   margin: auto;
   padding: 0px 15px;
-  
 }
-
-  /* .portfolio-button {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    max-width: 1200px;
-  } */
 
 .filter-button {
   background: #f5f4fa;
   border-radius: 4px;
-  font-family: inherit
-    font-weight: 500;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -546,11 +523,10 @@ display: inline-block;
   margin-bottom: 50px;
 }
 
-/* Portfolio work */
+/* ========== Portfolio work ==========*/
 
 .portfolio-title-work {
   width: var(--box-sizing);
-  /* max-width: 1200px; */
   margin: auto;
   margin-bottom: 94px;
 }
@@ -569,23 +545,16 @@ display: inline-block;
 }
 
 .card-work {
-  width: 370px;
-  /* height: 404px; */
-  /* margin-bottom: 30px; */
-  border: 1px solid #ececec;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* .img-work {
-  padding-bottom: 20px;
-} */
-
 .card-work-name {
-  padding-top: 20px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: px;
+  border: 1px solid #ececec;
 }
 .work-title {
   color: var(--title-text-color);
@@ -593,13 +562,9 @@ display: inline-block;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
 }
 .work-text {
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  padding-left: 24px;
 }
-
